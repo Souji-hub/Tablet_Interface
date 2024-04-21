@@ -1,0 +1,172 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+/* Tablet Landscape */
+@media only screen and (max-width: 1247px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+/* Responsive for Smaller Screens */
+@media only screen and (max-width: 767px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+
+
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  color: white;
+}
+
+.headerimg img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.headercontent {
+  text-align: center;
+  flex: 3;
+  margin: auto;
+  margin-right: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.headercontent p {
+  position: relative;
+  animation: marquee 15s linear infinite;
+}
+
+.headercontent img {
+  max-width: 50px;
+}
+
+.headerinfo {
+  text-align: right;
+  flex: 1;
+  margin-top: 10px;
+}
+
+.container {
+  text-align: center;
+  padding: 10px;
+}
+
+.slideshow-container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+  animation: fade 3s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+@keyframes fade {
+  from {
+      opacity: 0.8;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+img.slider-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.numbertext {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+table {
+  border: 2px solid #000;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+td {
+  padding: 20px;
+}
+
+button {
+  padding: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  border: none;
+  width: 100%;
+  max-width: 250px;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.info img {
+  max-width: 200px;
+  margin-right: 20px;
+}
+
+.info p {
+  text-align: left;
+  margin: 0;
+}
+
+.info button {
+  margin-top: 10px;
+}

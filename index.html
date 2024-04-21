@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Geeta Aviation Robot Interface</title>
+</head>
+
+<body>
+    <div class="maincontent">
+         <!-- Header Section -->
+        <header class="header-container" style="display: none;">
+
+            <div class="headerimg"><img src="images\logo.jpg" alt="Geeta Aviation Logo"></div>
+            <div class="headercontent">
+                <p>
+                    
+                   <span>Stop Dreaming, Start Flying</span>
+                    <img src="images\airplane.png">
+                </p>
+            </div>
+            <div class="headerinfo">
+                <h1>Geeta Aviation</h1>
+                <h3>A Complete Aviation Solution</h3>
+            </div>
+
+        </header>
+        <!-- Main Content Section -->
+        <div class="container" id="welcomeContainer">
+            
+            <!-- Image Slideshow Section -->
+            <div class="slideshow-container">
+                <h1>Welcome to Geeta Aviation!!</h1>
+                    <!-- Slides -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="images\slide1.jpg" alt="Slide 1" class="slider-image">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="images\slide2.jpg" alt="Slide 2" class="slider-image">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="images\slide3.jpg" alt="Slide 3" class="slider-image">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="images\slide1.jpg" alt="Slide 4" class="slider-image">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="images\slide2.jpg" alt="Slide 5" class="slider-image">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="images\slide3.jpg" alt="Slide 6" class="slider-image">
+                </div>
+                <!-- Start Button -->
+                <div class="button-container">
+                    <button onclick="tableDisplay()">Start</button>
+                </div>
+                
+            </div>
+             <!-- Navigation Table Section -->
+            <div class="table-container" style="display: none;">
+                <h1>Welcome !!</h1>
+                <table>
+                    <tr>
+                        <td><button onclick="showPageInformation('about')">About</button></td>
+                        <td><button onclick="showPageInformation('consultant')">Consultants</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="showPageInformation('services')"> Services </button></td>
+                        <td><button onclick="showPageInformation('contact')">Contact Us</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="showPageInformation('faq')">FAQ</button></td>
+                        <td><button onclick="showPageInformation('robot')">About this Robot</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button onclick="goHome()">Home</button></td> 
+                    </tr>
+                </table>
+            </div>
+            <!-- Information Container Section -->
+            <div class="info-container" style="display: none;">
+                <!-- Content will be dynamically added here -->
+            </div>
+            
+        </div>
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
